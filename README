@@ -1,0 +1,2 @@
+Run all testcase: npx playwright test
+Run specific testcase: npx playwright test tests/login.spec.ts
