@@ -1,21 +1,5 @@
 import { Page } from '@playwright/test';
 
-// export class CartPage {
-//   readonly page: Page;
-//   readonly cartButton = '.shopping_cart_link';
-//   readonly cartList = '.cart_list';
-
-//   constructor(page: Page) {
-//     this.page = page;
-//   }
-
-//   async gotoCart() {
-//     await this.page.click(this.cartButton);
-//     await this.page.waitForSelector(this.cartList);
-//   }
-// }
-
-
 export class CartPage {
   constructor(public page: Page) {}
 
