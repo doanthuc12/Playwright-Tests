@@ -40,7 +40,8 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: auto-pr/${{ github.ref_name }}# nhánh hiện tại (feature/xxx)
+          # branch: auto-pr/${{ github.ref_name }}# nhánh hiện tại (feature/xxx)
           base: master # nhánh đích
+          head: ${{ github.ref_name }}
           title: "Auto PR: ${{ github.ref_name }} → master"
           body: "This PR was created automatically after passing tests."
