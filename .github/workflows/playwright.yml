@@ -1,9 +1,14 @@
 name: Playwright Tests
 on:
-  # push:
-  #   branches: [feature/*]//
-  pull_request:
-    branches: [main, master]
+  push:
+    branches-ignore:
+      - master
+  # pull_request:
+  #   branches: [main, master]
+permissions:
+  contents: write # cho phép push commit/branch
+  pull-requests: write
+
 jobs:
   test:
     timeout-minutes: 60
