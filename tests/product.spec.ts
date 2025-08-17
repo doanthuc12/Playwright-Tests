@@ -17,6 +17,7 @@ test.describe('PRODUCT SUITE', () => {
   // Check list sort options are displayed all
   test('Product page has sort options @PRODUCT_UI', async ({ productPage }) => {
     await test.step('Check sort options', async () => {
+      //need to replace by a function
       await expectSortOptions(productPage, [
         'Name (A to Z)',
         'Name (Z to A)',
